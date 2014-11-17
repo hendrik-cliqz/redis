@@ -28,7 +28,7 @@ CORE_O=	lapi.o lcode.o ldebug.o ldo.o ldump.o lfunc.o lgc.o llex.o lmem.o \
 	lundump.o lvm.o lzio.o strbuf.o fpconv.o
 LIB_O=	lauxlib.o lbaselib.o ldblib.o liolib.o lmathlib.o loslib.o ltablib.o \
 	lstrlib.o loadlib.o linit.o lua_cjson.o lua_struct.o lua_cmsgpack.o \
-	lua_bit.o
+	lua_bit.o lzlib.o
 
 LUA_T=	lua
 LUA_O=	lua.o

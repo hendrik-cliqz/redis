@@ -979,11 +979,12 @@ LUALIB_API int luaopen_zlib(lua_State *L)
 
     luaL_register(L, NULL, zlib);
 
-    #if LUA_VERSION_NUM < 502
-/* Register name globally for 5.1 */
-lua_pushvalue(L, -1);
-lua_setglobal(L, "zlib");
+#if LUA_VERSION_NUM < 502
+    /* Register name globally for 5.1 */
+    lua_pushvalue(L, -1);
+    lua_setglobal(L, "zlib");
 #endif
+
     /*
     ** Stack: zlib table
     */
